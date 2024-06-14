@@ -8,12 +8,82 @@
 </head>
 
 <body>
-    <h1>
-        Odin Recipes
-    </h1>
-    <a href="recipes/noodles.html">Noodles</a><br>
-    <a href="recipes/chicken-briyani.html">Chicken Briyani</a><br>
-    <a href="recipes/pasta.html">Pasta</a>
+    <div class="container">
+        <h1 div="Title" id="Title">
+            Odin Recipes
+        </h1>
+        <img src="recipe.jpeg" alt="Recipe Image">
+        <ul div="recipes" id="recipes">
+            <li>
+                <a href="recipes/noodles.html">Noodles</a>
+            </li>
+            <li>
+                <a href="recipes/chicken-briyani.html">Chicken Briyani</a>
+            </li>
+            <li>
+                <a href="recipes/pasta.html">Pasta</a>
+            </li>
+        </ul>
+    </div>
 </body>
+<style>
+    body {
+        background-color: antiquewhite;
+        width: 100vw;
+        align-items: center;
+        margin: 50px;
+        margin-right: 50px;
+    }
+    
+    .container {
+        width: 100%;
+        text-align: center;
+        border-color: darkred;
+        border-style: solid;
+        background-color: aliceblue;
+        box-sizing: border-box;
+    }
+    
+    #Title {
+        text-align: center;
+    }
+    
+    #recipes {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #recipes li {
+        /* background-color: #ccffcc; */
+        /* Light green background */
+        margin: 10px 0;
+        /* Space between the list items */
+        padding: 20px;
+        /* Space inside the list items */
+        border: 2px solid black;
+        /* Black border */
+        display: flex;
+        align-items: center;
+    }
+    
+    #recipes li:nth-child(3) {
+        background-color: #ffccff;
+        /* Light pink background for the third item */
+    }
+    
+    #recipes li:nth-child(2) {
+        background-color: lightgreen;
+    }
+    
+    #recipes li:nth-child(1) {
+        background-color: pink;
+    }
+    
+    img {
+        border-style: inset;
+        border-color: red;
+    }
+</style>
 
 </html>

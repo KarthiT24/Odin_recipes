@@ -5,60 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noodles</title>
+    <style>
+        * {
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c2a3d1;
+        }
+        
+        img {
+            width: 200px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        h1 {
+            color: darkred;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .recipe-card {
+            width: 600px;
+            /* 2 + 50 + 400 + 50 + 2 */
+            text-align: center;
+            background-color: #FFFAFA;
+            margin: 20px auto;
+            padding: 50px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+        }
+        
+        .recipe-content {
+            text-align: left;
+            padding: 20px;
+        }
+        
+        .recipe-card h1,
+        .recipe-card a {
+            text-transform: uppercase;
+        }
+        
+        .recipe-card.feature {
+            border: 2px solid darkred;
+        }
+        
+        ul li h2 {
+            font-size: 16px;
+        }
+        
+        .recipe-card a {
+            background-color: #fc9400;
+            color: #fff;
+            text-decoration: none;
+            margin: 20px;
+            padding: 10px 12px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Noodles</h1>
-    <img src="/noodles.webp" alt="Noodles"></body>
-<article>
-    <h1>Description</h1>
-    <p>To make a delicious noodle dish, start by boiling 200 grams of your preferred noodles according to the package instructions, then drain and set aside. In a large pan, heat 2 tablespoons of oil over medium heat and sauté 2 cloves of minced garlic and
-        1 tablespoon of grated ginger until fragrant. Add one chopped onion, one sliced bell pepper, one julienned carrot, and a cup of broccoli florets. Stir-fry the vegetables for about 5 minutes until tender-crisp. For the vegetarian version, add 1
-        cup of tofu cubes and cook until they are golden brown. Season with 2 tablespoons of soy sauce, 1 tablespoon of hoisin sauce, and a pinch of black pepper. Toss the cooked noodles into the pan and mix well until everything is evenly coated and
-        heated through. For a non-vegetarian option, replace the tofu with 200 grams of thinly sliced chicken breast or shrimp. Cook the protein in the pan first, with a little salt and pepper, until fully cooked and then set aside. Proceed to sauté the
-        garlic, ginger, and vegetables as described above. Once the vegetables are done, return the cooked chicken or shrimp to the pan, and season with soy sauce and hoisin sauce. Add the cooked noodles, and toss everything together until well combined
-        and heated through. Garnish with chopped green onions and a sprinkle of sesame seeds before serving. Enjoy your flavorful, customizable noodle dish!</p>
-</article>
-<h1>Ingredients</h1>
-<h2>Noodles</h2>
-<ul>
-    <li>200 grams of your preferred noodles</li>
-</ul>
-<h2>Basic Ingredients</h2>
-<ul>
-    <li>2 tablespoons oil (vegetable or sesame)</li>
-    <li>2 cloves garlic, minced</li>
-    <li>1 tablespoon grated ginger </li>
-    <li>1 onion, chopped </li>
-    <li>1 bell pepper sliced </li>
-    <li>1 carrot, julienned</li>
-    <li>1 cup broccoli florets </li>
-    <li>2 tablespoons soy sauce</li>
-    <li>1 tablespoon hoisin sauce</li>
-    <li>Pinch of black pepper</li>
-    <li>Chopped green onions (for garnish)</li>
-    <li>Sesame seeds (for garnish)</li>
-</ul>
-<h2>Additional Ingredients(If required)</h2>
-<h3>Vegetarian</h3>
-<ul>
-    <li>1 cup tofu(panner) cubes</li>
-</ul>
-<h3>Non-Vegetarian</h3>
-<ul>
-    <li>200 grams thinly sliced chicken breast or shrimp</li>
-</ul>
-<h2>Steps</h2>
-<ol>
-    <li>Boil 200 grams of your preferred noodles according to the package instructions. Drain and set aside.</li>
-    <li>In a large pan, heat 2 tablespoons of oil over medium heat and sauté 2 cloves of minced garlic and 1 tablespoon of grated ginger until fragrant.</li>
-    <li>Add one chopped onion, one sliced bell pepper, one julienned carrot, and a cup of broccoli florets. Stir-fry the vegetables for about 5 minutes until tender-crisp.</li>
-    <li>For the vegetarian option, add 1 cup of tofu cubes and cook until they are golden brown. For the non-vegetarian option, cook 200 grams of thinly sliced chicken breast or shrimp in the pan with a little salt and pepper until fully cooked, then set
-        aside.
-    </li>
-    <li>Season the vegetables with 2 tablespoons of soy sauce, 1 tablespoon of hoisin sauce, and a pinch of black pepper.</li>
-    <li>Toss the cooked noodles into the pan and mix well until everything is evenly coated and heated through. If using chicken or shrimp, return them to the pan and combine with the noodles and vegetables.</li>
-    <li>Garnish with chopped green onions and a sprinkle of sesame seeds before serving. Enjoy!</li>
-</ol>
+    <center>
+        <h1>Noodles</h1>
+        <img src="/noodles.webp" alt="Noodles">
+    </center>
+    <article class="recipe-card">
+        <div class="recipe-content">
+            <h1>Description</h1>
+            <p>To make a delicious noodle dish, start by boiling 200 grams of your preferred noodles according to the package instructions, then drain and set aside. In a large pan, heat 2 tablespoons of oil over medium heat and sauté 2 cloves of minced
+                garlic and 1 tablespoon of grated ginger until fragrant. Add one chopped onion, one sliced bell pepper, one julienned carrot, and a cup of broccoli florets. Stir-fry the vegetables for about 5 minutes until tender-crisp. For the vegetarian
+                version, add 1 cup of tofu cubes and cook until they are golden brown. Season with 2 tablespoons of soy sauce, 1 tablespoon of hoisin sauce, and a pinch of black pepper. Toss the cooked noodles into the pan and mix well until everything
+                is evenly coated and heated through. For a non-vegetarian option, replace the tofu with 200 grams of thinly sliced chicken breast or shrimp. Cook the protein in the pan first, with a little salt and pepper, until fully cooked and then
+                set aside. Proceed to sauté the garlic, ginger, and vegetables as described above. Once the vegetables are done, return the cooked chicken or shrimp to the pan, and season with soy sauce and hoisin sauce. Add the cooked noodles, and toss
+                everything together until well combined and heated through. Garnish with chopped green onions and a sprinkle of sesame seeds before serving. Enjoy your flavorful, customizable noodle dish!</p>
+        </div>
+    </article>
+    <article class="recipe-card">
+        <div class="recipe-content">
+            <h1>Ingredients</h1>
+            <h2>Noodles</h2>
+            <ul>
+                <li>200 grams of your preferred noodles</li>
+            </ul>
+            <h2>Basic Ingredients</h2>
+            <ul>
+                <li>2 tablespoons oil (vegetable or sesame)</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 tablespoon grated ginger </li>
+                <li>1 onion, chopped </li>
+                <li>1 bell pepper sliced </li>
+                <li>1 carrot, julienned</li>
+                <li>1 cup broccoli florets </li>
+                <li>2 tablespoons soy sauce</li>
+                <li>1 tablespoon hoisin sauce</li>
+                <li>Pinch of black pepper</li>
+                <li>Chopped green onions (for garnish)</li>
+                <li>Sesame seeds (for garnish)</li>
+            </ul>
+            <h2>Additional Ingredients (If required)</h2>
+            <h3>Vegetarian</h3>
+            <ul>
+                <li>1 cup tofu (paneer) cubes</li>
+            </ul>
+            <h3>Non-Vegetarian</h3>
+            <ul>
+                <li>200 grams thinly sliced chicken breast or shrimp</li>
+            </ul>
+        </div>
+    </article>
+    <article class="recipe-card">
+        <div class="recipe-content">
+            <h2>Steps</h2>
+            <ol>
+                <li>Boil 200 grams of your preferred noodles according to the package instructions. Drain and set aside.</li>
+                <li>In a large pan, heat 2 tablespoons of oil over medium heat and sauté 2 cloves of minced garlic and 1 tablespoon of grated ginger until fragrant.</li>
+                <li>Add one chopped onion, one sliced bell pepper, one julienned carrot, and a cup of broccoli florets. Stir-fry the vegetables for about 5 minutes until tender-crisp.</li>
+                <li>For the vegetarian option, add 1 cup of tofu cubes and cook until they are golden brown. For the non-vegetarian option, cook 200 grams of thinly sliced chicken breast or shrimp in the pan with a little salt and pepper until fully cooked,
+                    then set aside.
+                </li>
+                <li>Season the vegetables with 2 tablespoons of soy sauce, 1 tablespoon of hoisin sauce, and a pinch of black pepper.</li>
+                <li>Toss the cooked noodles into the pan and mix well until everything is evenly coated and heated through. If using chicken or shrimp, return them to the pan and combine with the noodles and vegetables.</li>
+                <li>Garnish with chopped green onions and a sprinkle of sesame seeds before serving. Enjoy!</li>
+            </ol>
+        </div>
+    </article>
+</body>
 
 </html>

@@ -5,57 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasta</title>
+    <style>
+        * {
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c2a3d1;
+        }
+        
+        img {
+            width: 200px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        h1 {
+            color: darkred;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .recipe-card {
+            width: 600px;
+            /* 2 + 50 + 400 + 50 + 2 */
+            text-align: center;
+            background-color: #FFFAFA;
+            margin: 20px auto;
+            padding: 50px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+        }
+        
+        .recipe-content {
+            text-align: left;
+            padding: 20px;
+        }
+        
+        .recipe-card h1,
+        .recipe-card a {
+            text-transform: uppercase;
+        }
+        
+        .recipe-card.feature {
+            border: 2px solid darkred;
+        }
+        
+        ul li h2 {
+            font-size: 16px;
+        }
+        
+        .recipe-card a {
+            background-color: #fc9400;
+            color: #fff;
+            text-decoration: none;
+            margin: 20px;
+            padding: 10px 12px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Pasta</h1>
-    <img src="/pasta.jpeg" alt="Pasta">
-
-    <article>
-        <h1>Description</h1>
-        <p>To make a delicious pasta dish, start by boiling 200 grams of your preferred pasta according to the package instructions, then drain and set aside. In a large pan, heat 2 tablespoons of olive oil over medium heat and sauté 2 cloves of minced garlic
-            and 1 chopped onion until translucent. Add 1 can of diced tomatoes, 1 teaspoon of dried oregano, and salt and pepper to taste. Simmer for 10 minutes. For the vegetarian version, add 1 cup of chopped bell peppers, zucchini, and spinach, and
-            cook until the vegetables are tender. For a non-vegetarian option, add 200 grams of cooked and sliced chicken breast or shrimp. Toss the cooked pasta into the sauce and mix well. Garnish with grated Parmesan cheese and fresh basil before serving.
-            Enjoy your flavorful vegetarian or non-vegetarian pasta dish!</p>
+    <center>
+        <h1>Pasta</h1>
+        <img src="/pasta.jpeg" alt="Pasta">
+    </center>
+    <article class="recipe-card">
+        <div class="recipe-content">
+            <h1>Description</h1>
+            <p>To make a delicious pasta dish, start by boiling 200 grams of your preferred pasta according to the package instructions, then drain and set aside. In a large pan, heat 2 tablespoons of olive oil over medium heat and sauté 2 cloves of minced
+                garlic and 1 chopped onion until translucent. Add 1 can of diced tomatoes, 1 teaspoon of dried oregano, and salt and pepper to taste. Simmer for 10 minutes. For the vegetarian version, add 1 cup of chopped bell peppers, zucchini, and spinach,
+                and cook until the vegetables are tender. For a non-vegetarian option, add 200 grams of cooked and sliced chicken breast or shrimp. Toss the cooked pasta into the sauce and mix well. Garnish with grated Parmesan cheese and fresh basil
+                before serving. Enjoy your flavorful vegetarian or non-vegetarian pasta dish!</p>
+        </div>
     </article>
-
-    <h1>Ingredients</h1>
-    <h2>Pasta</h2>
-    <ul>
-        <li>200 grams of your preferred pasta</li>
-    </ul>
-    <h2>Basic Ingredients</h2>
-    <ul>
-        <li>2 tablespoons olive oil</li>
-        <li>2 cloves garlic, minced</li>
-        <li>1 onion, chopped</li>
-        <li>1 can diced tomatoes</li>
-        <li>1 teaspoon dried oregano</li>
-        <li>Salt and pepper to taste</li>
-        <li>Grated Parmesan cheese (for garnish)</li>
-        <li>Fresh basil (for garnish)</li>
-    </ul>
-    <h2>Vegetarian Option</h2>
-    <ul>
-        <li>1 cup chopped bell peppers</li>
-        <li>1 zucchini, chopped</li>
-        <li>1 cup spinach</li>
-    </ul>
-    <h2>Non-Vegetarian Option</h2>
-    <ul>
-        <li>200 grams cooked and sliced chicken breast or shrimp</li>
-    </ul>
-
-    <h2>Steps</h2>
-    <ol>
-        <li>Boil 200 grams of your preferred pasta according to the package instructions. Drain and set aside.</li>
-        <li>In a large pan, heat 2 tablespoons of olive oil over medium heat and sauté 2 cloves of minced garlic and 1 chopped onion until translucent.</li>
-        <li>Add 1 can of diced tomatoes, 1 teaspoon of dried oregano, and salt and pepper to taste. Simmer for 10 minutes.</li>
-        <li>For the vegetarian option, add 1 cup of chopped bell peppers, zucchini, and spinach, and cook until the vegetables are tender.</li>
-        <li>For the non-vegetarian option, add 200 grams of cooked and sliced chicken breast or shrimp.</li>
-        <li>Toss the cooked pasta into the sauce and mix well.</li>
-        <li>Garnish with grated Parmesan cheese and fresh basil before serving. Enjoy your flavorful pasta dish!</li>
-    </ol>
+    <article class="recipe-card">
+        <div class="recipe-content">
+            <h1>Ingredients</h1>
+            <h2>Pasta</h2>
+            <ul>
+                <li>200 grams of your preferred pasta</li>
+            </ul>
+            <h2>Basic Ingredients</h2>
+            <ul>
+                <li>2 tablespoons olive oil</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 onion, chopped</li>
+                <li>1 can diced tomatoes</li>
+                <li>1 teaspoon dried oregano</li>
+                <li>Salt and pepper to taste</li>
+                <li>Grated Parmesan cheese (for garnish)</li>
+                <li>Fresh basil (for garnish)</li>
+            </ul>
+            <h2>Vegetarian Option</h2>
+            <ul>
+                <li>1 cup chopped bell peppers</li>
+                <li>1 zucchini, chopped</li>
+                <li>1 cup spinach</li>
+            </ul>
+            <h2>Non-Vegetarian Option</h2>
+            <ul>
+                <li>200 grams cooked and sliced chicken breast or shrimp</li>
+            </ul>
+        </div>
+    </article>
+    <article class="recipe-card">
+        <div class="recipe-content">
+            <h2>Steps</h2>
+            <ol>
+                <li>Boil 200 grams of your preferred pasta according to the package instructions. Drain and set aside.</li>
+                <li>In a large pan, heat 2 tablespoons of olive oil over medium heat and sauté 2 cloves of minced garlic and 1 chopped onion until translucent.</li>
+                <li>Add 1 can of diced tomatoes, 1 teaspoon of dried oregano, and salt and pepper to taste. Simmer for 10 minutes.</li>
+                <li>For the vegetarian option, add 1 cup of chopped bell peppers, zucchini, and spinach, and cook until the vegetables are tender.</li>
+                <li>For the non-vegetarian option, add 200 grams of cooked and sliced chicken breast or shrimp.</li>
+                <li>Toss the cooked pasta into the sauce and mix well.</li>
+                <li>Garnish with grated Parmesan cheese and fresh basil before serving. Enjoy your flavorful pasta dish!</li>
+            </ol>
+        </div>
+    </article>
 </body>
 
 </html>
